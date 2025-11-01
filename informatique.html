@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFORMATIQUE - Loumou's Guinée</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="images/global.jpg" alt="Loumou's Guinée Logo" class="logo-img">
+                    <span class="logo-text">Loumou's Guinée</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item active">
+                    <a href="informatique.html" class="nav-link">INFORMATIQUE</a>
+                </li>
+                <li class="nav-item">
+                    <a href="business.html" class="nav-link">BUSSINESS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="immobilier.html" class="nav-link">IMMOBILIER</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">INFORMATIQUE</h1>
+            <p class="page-subtitle">Solutions informatiques professionnelles pour votre entreprise</p>
+        </div>
+    </section>
+
+    <!-- Tabs Section -->
+    <section class="services-page">
+        <div class="container">
+            <!-- Tab Navigation -->
+            <div class="tab-navigation">
+                <button class="tab-btn active" data-tab="formation">Domaine de formation</button>
+                <button class="tab-btn" data-tab="prestation">Prestation</button>
+            </div>
+
+            <!-- Tab Content: Domaine de formation -->
+            <div class="tab-content active" id="formation-tab">
+                <div class="formation-submenu">
+                    <button class="formation-btn" data-info="initiation">
+                        <span class="btn-icon">📚</span>
+                        Initiation en informatique
+                    </button>
+                    <button class="formation-btn" data-info="bureautique">
+                        <span class="btn-icon">💼</span>
+                        Bureautique complète
+                    </button>
+                    <button class="formation-btn" data-info="internet">
+                        <span class="btn-icon">🌐</span>
+                        Internet et communication numérique
+                    </button>
+                    <button class="formation-btn" data-info="graphisme">
+                        <span class="btn-icon">🎨</span>
+                        Graphisme et design
+                    </button>
+                    <button class="formation-btn" data-info="dactylographie">
+                        <span class="btn-icon">⌨️</span>
+                        Dactylographie
+                    </button>
+                    <button class="formation-btn" data-info="maintenance">
+                        <span class="btn-icon">🔧</span>
+                        Maintenance informatique
+                    </button>
+                    <button class="formation-btn" data-info="excel">
+                        <span class="btn-icon">📊</span>
+                        Création d'applications sur Excel
+                    </button>
+                </div>
+
+                <!-- Information Display Area -->
+                <div class="info-display" id="info-display">
+                    <div class="info-placeholder">
+                        <p>Cliquez sur un bouton ci-dessus pour voir les détails de la formation</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content: Prestation -->
+            <div class="tab-content" id="prestation-tab">
+                <!-- Prestations Section -->
+                <div class="formation-submenu">
+                    <button class="formation-btn" data-info="sites-vitrines">
+                        <span class="btn-icon">🌐</span>
+                        Création de sites vitrines et e-commerce
+                    </button>
+                    <button class="formation-btn" data-info="conception-logos">
+                        <span class="btn-icon">🎨</span>
+                        Conception de logos et affiches
+                    </button>
+                    <button class="formation-btn" data-info="impression-diplomes">
+                        <span class="btn-icon">📄</span>
+                        Impression de diplômes et documents
+                    </button>
+                    <button class="formation-btn" data-info="logiciels-sur-mesure">
+                        <span class="btn-icon">💻</span>
+                        Développement de logiciels sur mesure
+                    </button>
+                    <button class="formation-btn" data-info="presentations-powerpoint">
+                        <span class="btn-icon">📊</span>
+                        Création de présentations PowerPoint
+                    </button>
+                    <button class="formation-btn" data-info="assistance-depannage">
+                        <span class="btn-icon">🛠️</span>
+                        Assistance informatique et dépannage
+                    </button>
+                    <button class="formation-btn" data-info="cartes-pvc">
+                        <span class="btn-icon">🖨️</span>
+                        Confection de cartes PVC professionnelles
+                    </button>
+                </div>
+
+                <!-- Formation avancée Section -->
+                <h3 class="section-subtitle">Formation avancée et accompagnement professionnel</h3>
+                <div class="formation-submenu">
+                    <button class="formation-btn" data-info="projets-pratiques">
+                        <span class="btn-icon">📝</span>
+                        Projets pratiques (Word, Excel, PowerPoint)
+                    </button>
+                    <button class="formation-btn" data-info="gestion-finance">
+                        <span class="btn-icon">💰</span>
+                        Gestion et finance d'entreprise sur Excel
+                    </button>
+                    <button class="formation-btn" data-info="entrepreneuriat-numerique">
+                        <span class="btn-icon">🚀</span>
+                        Ateliers d'entrepreneuriat numérique
+                    </button>
+                </div>
+
+                <!-- Information Display Area -->
+                <div class="info-display" id="prestation-info-display">
+                    <div class="info-placeholder">
+                        <p>Cliquez sur un bouton ci-dessus pour voir les détails de la prestation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Prêt à améliorer votre compétence en informatique ?</h2>
+            <p>Contactez-nous dès aujourd'hui pour discuter de vos besoins</p>
+            <div class="contact-info">
+                <p><strong>Téléphone:</strong> <a href="tel:+224623795149">623 79 51 49</a> / <a href="tel:+224623449012">623 44 90 12</a></p>
+                <p><strong>WhatsApp:</strong> <a href="https://wa.me/224623449012" target="_blank" rel="noopener" class="whatsapp-link">623 44 90 12</a></p>
+            </div>
+            <div class="cta-buttons">
+                <a href="https://wa.me/224623449012" target="_blank" rel="noopener" class="btn btn-primary">Nous contacter sur WhatsApp</a>
+                <a href="index.html" class="btn btn-secondary">Retour à l'accueil</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Loumou's Guinée</h3>
+                    <p class="footer-slogan">Votre partenaire de confiance pour apprendre, entreprendre et réussir.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="informatique.html">Informatique</a></li>
+                        <li><a href="business.html">Business</a></li>
+                        <li><a href="immobilier.html">Immobilier</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Guinée</p>
+                    <p>Email: <a href="mailto:loumousguinee2025@gmail.com">loumousguinee2025@gmail.com</a></p>
+                    <p>Téléphone: <a href="tel:+224623795149">623 79 51 49</a> / <a href="tel:+224623449012">623 44 90 12</a></p>
+                    <p>WhatsApp: <a href="https://wa.me/224623449012" target="_blank" rel="noopener">623 44 90 12</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Loumou's Guinée. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Admin Access Button -->
+    <div class="admin-access-btn" onclick="window.location.href='admin.html'" title="Accès admin">
+        <span>⚙️</span>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/site-content.js"></script>
+</body>
+</html>
+
+

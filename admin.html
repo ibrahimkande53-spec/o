@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin - Loumou's Guinée</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <!-- Login Screen -->
+    <div id="login-screen" class="login-screen">
+        <div class="login-container">
+            <div class="login-header">
+                <h1>🔐 Accès Admin</h1>
+                <p>Connectez-vous pour modifier le contenu du site</p>
+            </div>
+            <form id="login-form" class="login-form">
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" required placeholder="Entrez le mot de passe">
+                </div>
+                <button type="submit" class="btn btn-primary btn-login">Se connecter</button>
+            </form>
+            <div id="login-error" class="error-message"></div>
+        </div>
+    </div>
+
+    <!-- Admin Panel -->
+    <div id="admin-panel" class="admin-panel" style="display: none;">
+        <!-- Admin Header -->
+        <header class="admin-header">
+            <div class="admin-header-content">
+                <h1>🎛️ Panneau d'administration</h1>
+                <button id="logout-btn" class="btn btn-secondary btn-logout">Déconnexion</button>
+            </div>
+        </header>
+
+        <!-- Admin Content -->
+        <main class="admin-content">
+            <div class="container">
+                <!-- Hero Section -->
+                <section class="admin-section">
+                    <h2 class="admin-section-title">🖼️ Section Hero (Page d'accueil)</h2>
+                    <div class="admin-grid">
+                        <div class="admin-card">
+                            <h3>Titre principal</h3>
+                            <textarea id="hero-title" class="admin-textarea" rows="2">Bienvenue chez Loumou's Guinée</textarea>
+                        </div>
+                        <div class="admin-card">
+                            <h3>Slogan</h3>
+                            <textarea id="hero-slogan" class="admin-textarea" rows="2">Loumou's Guinée — Votre partenaire de confiance pour apprendre, entreprendre et réussir.</textarea>
+                        </div>
+                        <div class="admin-card">
+                            <h3>Sous-titre</h3>
+                            <textarea id="hero-subtitle" class="admin-textarea" rows="2">Votre partenaire de confiance pour l'informatique, le business et l'immobilier</textarea>
+                        </div>
+                        <div class="admin-card">
+                            <h3>Logo</h3>
+                            <input type="text" id="hero-logo" class="admin-input" value="images/global.jpg" placeholder="images/logo.jpg">
+                            <button class="btn btn-small" onclick="previewImage('hero-logo')">Aperçu</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- About Section -->
+                <section class="admin-section">
+                    <h2 class="admin-section-title">📝 Section À propos</h2>
+                    <div class="admin-grid">
+                        <div class="admin-card">
+                            <h3>Paragraphe 1</h3>
+                            <textarea id="about-p1" class="admin-textarea" rows="3">Loumou's Guinée est une entreprise dynamique et innovante qui propose des services de qualité dans trois domaines d'excellence : l'informatique, le business et l'immobilier.</textarea>
+                        </div>
+                        <div class="admin-card">
+                            <h3>Paragraphe 2</h3>
+                            <textarea id="about-p2" class="admin-textarea" rows="3">Notre mission est de fournir des solutions professionnelles adaptées aux besoins de nos clients, avec un engagement constant envers l'excellence et la satisfaction client.</textarea>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Services -->
+                <section class="admin-section">
+                    <h2 class="admin-section-title">💼 Services Informatique</h2>
+                    <div class="admin-grid">
+                        <div class="admin-card">
+                            <h3>Initiation - Titre</h3>
+                            <input type="text" id="service-init-title" class="admin-input" value="Initiation en informatique">
+                            <h3>Initiation - Items</h3>
+                            <textarea id="service-init-items" class="admin-textarea" rows="3">Bases de l'ordinateur
+Système Windows
+Organisation des fichiers</textarea>
+                        </div>
+                        <div class="admin-card">
+                            <h3>Bureautique - Titre</h3>
+                            <input type="text" id="service-bur-title" class="admin-input" value="Bureautique complète">
+                            <h3>Bureautique - Items</h3>
+                            <textarea id="service-bur-items" class="admin-textarea" rows="3">Word
+Excel
+PowerPoint
+Access</textarea>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Images -->
+                <section class="admin-section">
+                    <h2 class="admin-section-title">📷 Images du site</h2>
+                    <div class="admin-grid">
+                        <div class="admin-card">
+                            <h3>Image Slider 1</h3>
+                            <input type="text" id="img-slider-1" class="admin-input" value="images/carte.jpg">
+                            <button class="btn btn-small" onclick="previewImage('img-slider-1')">Aperçu</button>
+                        </div>
+                        <div class="admin-card">
+                            <h3>Image Slider 2</h3>
+                            <input type="text" id="img-slider-2" class="admin-input" value="images/carte2.jpg">
+                            <button class="btn btn-small" onclick="previewImage('img-slider-2')">Aperçu</button>
+                        </div>
+                        <div class="admin-card">
+                            <h3>Image Slider 3</h3>
+                            <input type="text" id="img-slider-3" class="admin-input" value="images/centre.jpg">
+                            <button class="btn btn-small" onclick="previewImage('img-slider-3')">Aperçu</button>
+                        </div>
+                        <div class="admin-card">
+                            <h3>Image Slider 4</h3>
+                            <input type="text" id="img-slider-4" class="admin-input" value="images/info.jpg">
+                            <button class="btn btn-small" onclick="previewImage('img-slider-4')">Aperçu</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact -->
+                <section class="admin-section">
+                    <h2 class="admin-section-title">📞 Informations de contact</h2>
+                    <div class="admin-grid">
+                        <div class="admin-card">
+                            <h3>Téléphone 1</h3>
+                            <input type="text" id="contact-phone1" class="admin-input" value="623 79 51 49">
+                        </div>
+                        <div class="admin-card">
+                            <h3>Téléphone 2</h3>
+                            <input type="text" id="contact-phone2" class="admin-input" value="623 44 90 12">
+                        </div>
+                        <div class="admin-card">
+                            <h3>Email</h3>
+                            <input type="email" id="contact-email" class="admin-input" value="loumousguinee2025@gmail.com">
+                        </div>
+                        <div class="admin-card">
+                            <h3>Adresse</h3>
+                            <textarea id="contact-address" class="admin-textarea" rows="2">Conakry, Guinée, commune de sanoyah, quartier kountia</textarea>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Save Button -->
+                <div class="admin-actions">
+                    <button id="save-btn" class="btn btn-primary btn-large">💾 Enregistrer toutes les modifications</button>
+                    <div id="save-status" class="save-status"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Image Preview Modal -->
+    <div id="image-preview-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <img id="preview-img" src="" alt="Aperçu">
+        </div>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>
+
